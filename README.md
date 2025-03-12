@@ -43,11 +43,12 @@ CyberFluxSimulator/
 │   │   │   ├── RandomUtils.java         # Métodos auxiliares
 │── test/
 │   ├── CyberFluxSimulatorTest.java      # Testes unitários
-│── README.md                            # Descrição do projeto
-│── build.gradle                         # Dependências (Gradle)
+│── README.md                            # Este arquivo 😉
+│── build.gradle / pom.xml               # Dependências (Gradle/Maven)
 ```
 
 ## 🚀 Como Rodar o Projeto
+### Usando Gradle
 1. Clone o repositório:
    ```sh
    git clone https://github.com/seu-usuario/CyberFluxSimulator.git
@@ -62,12 +63,27 @@ CyberFluxSimulator/
    ./gradlew test
    ```
 
+### Usando Maven
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/CyberFluxSimulator.git
+   cd CyberFluxSimulator
+   ```
+2. Compile e execute:
+   ```sh
+   mvn compile exec:java
+   ```
+3. Para rodar os testes:
+   ```sh
+   mvn test
+   ```
+
 ## 📌 Tecnologias Utilizadas
 🔹 **Java** - Linguagem principal do projeto
 
 🔹 **Threads e Semáforos** - Para controle concorrente
 
-🔹 **Gradle** - Gerenciamento de dependências e build
+🔹 **Gradle/Maven** - Gerenciamento de dependências e build
 
 🔹 **JUnit** - Para testes automatizados
 
