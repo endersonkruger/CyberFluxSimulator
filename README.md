@@ -4,15 +4,19 @@
 
 ## 📌 Funcionalidades
 ✅ Gerenciamento concorrente de clientes utilizando **threads**.
+
 ✅ Controle de acesso aos recursos via **semáforos**.
+
 ✅ Simulação de diferentes perfis de clientes:
    - **Gamer 🎮**: Prioriza PC + Headset VR.
    - **Freelancer 💻**: Prioriza PC + Cadeira.
    - **Estudante 📚**: Precisa apenas de um PC.
+
 ✅ Estatísticas no final da simulação:
    - Número total de clientes atendidos.
    - Tempo médio de espera por recurso.
    - Taxa de utilização de cada recurso.
+
 ✅ Estratégias para evitar **deadlock** e **starvation**.
 
 ## 🏗 Estrutura do Projeto
@@ -39,8 +43,8 @@ CyberFluxSimulator/
 │   │   │   ├── RandomUtils.java         # Métodos auxiliares
 │── test/
 │   ├── CyberFluxSimulatorTest.java      # Testes unitários
-│── README.md                            # Este arquivo 😉
-│── build.gradle / pom.xml               # Dependências (Gradle/Maven)
+│── README.md                            # Descrição do projeto
+│── build.gradle                         # Dependências (Gradle)
 ```
 
 ## 🚀 Como Rodar o Projeto
@@ -60,8 +64,11 @@ CyberFluxSimulator/
 
 ## 📌 Tecnologias Utilizadas
 🔹 **Java** - Linguagem principal do projeto
+
 🔹 **Threads e Semáforos** - Para controle concorrente
-🔹 **Gradle/Maven** - Gerenciamento de dependências e build
+
+🔹 **Gradle** - Gerenciamento de dependências e build
+
 🔹 **JUnit** - Para testes automatizados
 
 ## 📖 Licença
