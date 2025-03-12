@@ -1,0 +1,13 @@
+com\cyberflux\management\GerenciadorRecursos.class
+com\cyberflux\utils\Logger.class
+com\cyberflux\management\Estatisticas.class
+com\cyberflux\resources\Recurso.class
+com\cyberflux\models\Freelancer.class
+com\cyberflux\utils\RandomUtils.class
+com\cyberflux\models\Cliente.class
+com\cyberflux\resources\PC.class
+com\cyberflux\CyberFluxSimulator.class
+com\cyberflux\resources\Headset.class
+com\cyberflux\models\Estudante.class
+com\cyberflux\models\Gamer.class
+com\cyberflux\resources\Cadeira.class
