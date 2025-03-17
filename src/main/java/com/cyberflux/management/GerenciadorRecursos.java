@@ -1,32 +1,65 @@
 package com.cyberflux.management;
-import java.util.concurrent.Semaphore;
+
+import com.cyberflux.resources.PC;
+import com.cyberflux.resources.Headset;
+import com.cyberflux.resources.Cadeira;
+import com.cyberflux.utils.Logger;
+
 // Gerencia a alocação e liberação de recursos
 public class GerenciadorRecursos {
-    private final Semaphore pcs = new Semaphore(10, true);
-    private final Semaphore headsets = new Semaphore(6, true);
-    private final Semaphore cadeiras = new Semaphore(8, true);
+    private final PC pcs;
+    private final Headset headsets;
+    private final Cadeira cadeiras;
+    private final Logger logger = Logger.getInstancia();
+
+    public GerenciadorRecursos() {
+        this.pcs = new PC();
+        this.headsets = new Headset();
+        this.cadeiras = new Cadeira();
+    }
 
     public boolean alocarPC() throws InterruptedException {
-        return pcs.tryAcquire();
+        boolean sucesso = pcs.alocar();
+        if (sucesso) {
+            logger.log("PC alocado com sucesso.");
+        } else {
+            logger.log("Tentativa de alocar PC falhou (sem recursos disponíveis).");
+        }
+        return sucesso;
     }
 
     public void liberarPC() {
-        pcs.release();
+        pcs.liberar();
+        logger.log("PC liberado.");
     }
 
     public boolean alocarHeadset() throws InterruptedException {
-        return headsets.tryAcquire();
+        boolean sucesso = headsets.alocar();
+        if (sucesso) {
+            logger.log("Headset alocado com sucesso.");
+        } else {
+            logger.log("Tentativa de alocar Headset falhou (sem recursos disponíveis).");
+        }
+        return sucesso;
     }
 
     public void liberarHeadset() {
-        headsets.release();
+        headsets.liberar();
+        logger.log("Headset liberado.");
     }
 
     public boolean alocarCadeira() throws InterruptedException {
-        return cadeiras.tryAcquire();
+        boolean sucesso = cadeiras.alocar();
+        if (sucesso) {
+            logger.log("Cadeira alocada com sucesso.");
+        } else {
+            logger.log("Tentativa de alocar Cadeira falhou (sem recursos disponíveis).");
+        }
+        return sucesso;
     }
 
     public void liberarCadeira() {
-        cadeiras.release();
+        cadeiras.liberar();
+        logger.log("Cadeira liberada.");
     }
 }

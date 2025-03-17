@@ -1,7 +1,7 @@
 package com.cyberflux;
 import java.util.concurrent.ThreadLocalRandom;
 import com.cyberflux.management.*;
-import com.cyberflux.models.Gamer;
+import com.cyberflux.models.*;
 
 // Classe principal que inicia a simulação
 public class CyberFluxSimulator {
