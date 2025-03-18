@@ -1,120 +1,120 @@
-[17-03-2025 21:01:56] PC alocado com sucesso.
-[17-03-2025 21:01:56] Headset alocado com sucesso.
-[17-03-2025 21:01:56] Cadeira alocada com sucesso.
-[17-03-2025 21:01:57] PC alocado com sucesso.
-[17-03-2025 21:01:57] Headset alocado com sucesso.
-[17-03-2025 21:01:57] Cadeira alocada com sucesso.
-[17-03-2025 21:01:58] PC alocado com sucesso.
-[17-03-2025 21:01:58] Headset alocado com sucesso.
-[17-03-2025 21:01:58] Cadeira alocada com sucesso.
-[17-03-2025 21:01:59] PC liberado.
-[17-03-2025 21:01:59] Headset liberado.
-[17-03-2025 21:01:59] Cadeira liberada.
-[17-03-2025 21:01:59] PC alocado com sucesso.
-[17-03-2025 21:01:59] Headset alocado com sucesso.
-[17-03-2025 21:01:59] Cadeira alocada com sucesso.
-[17-03-2025 21:02:00] PC alocado com sucesso.
-[17-03-2025 21:02:00] Headset alocado com sucesso.
-[17-03-2025 21:02:00] Cadeira alocada com sucesso.
-[17-03-2025 21:02:01] PC alocado com sucesso.
-[17-03-2025 21:02:01] Headset alocado com sucesso.
-[17-03-2025 21:02:01] Cadeira alocada com sucesso.
-[17-03-2025 21:02:01] PC liberado.
-[17-03-2025 21:02:01] Headset liberado.
-[17-03-2025 21:02:01] Cadeira liberada.
-[17-03-2025 21:02:02] PC liberado.
-[17-03-2025 21:02:02] Headset liberado.
-[17-03-2025 21:02:02] Cadeira liberada.
-[17-03-2025 21:02:02] PC alocado com sucesso.
-[17-03-2025 21:02:02] Headset alocado com sucesso.
-[17-03-2025 21:02:02] Cadeira alocada com sucesso.
-[17-03-2025 21:02:03] PC liberado.
-[17-03-2025 21:02:03] Headset liberado.
-[17-03-2025 21:02:03] Cadeira liberada.
-[17-03-2025 21:02:03] PC alocado com sucesso.
-[17-03-2025 21:02:03] Headset alocado com sucesso.
-[17-03-2025 21:02:03] Cadeira alocada com sucesso.
-[17-03-2025 21:02:03] PC liberado.
-[17-03-2025 21:02:03] Headset liberado.
-[17-03-2025 21:02:03] Cadeira liberada.
-[17-03-2025 21:02:04] PC liberado.
-[17-03-2025 21:02:04] Headset liberado.
-[17-03-2025 21:02:04] Cadeira liberada.
-[17-03-2025 21:02:04] PC alocado com sucesso.
-[17-03-2025 21:02:04] Headset alocado com sucesso.
-[17-03-2025 21:02:04] Cadeira alocada com sucesso.
-[17-03-2025 21:02:05] PC liberado.
-[17-03-2025 21:02:05] Headset liberado.
-[17-03-2025 21:02:05] Cadeira liberada.
-[17-03-2025 21:02:05] PC alocado com sucesso.
-[17-03-2025 21:02:05] Headset alocado com sucesso.
-[17-03-2025 21:02:05] Cadeira alocada com sucesso.
-[17-03-2025 21:02:06] PC liberado.
-[17-03-2025 21:02:06] Headset liberado.
-[17-03-2025 21:02:06] Cadeira liberada.
-[17-03-2025 21:02:07] PC alocado com sucesso.
-[17-03-2025 21:02:07] Headset alocado com sucesso.
-[17-03-2025 21:02:07] Cadeira alocada com sucesso.
-[17-03-2025 21:02:08] PC alocado com sucesso.
-[17-03-2025 21:02:08] Headset alocado com sucesso.
-[17-03-2025 21:02:08] Cadeira alocada com sucesso.
-[17-03-2025 21:02:08] PC liberado.
-[17-03-2025 21:02:08] Headset liberado.
-[17-03-2025 21:02:08] Cadeira liberada.
-[17-03-2025 21:02:08] PC liberado.
-[17-03-2025 21:02:08] Headset liberado.
-[17-03-2025 21:02:08] Cadeira liberada.
-[17-03-2025 21:02:09] PC alocado com sucesso.
-[17-03-2025 21:02:09] Headset alocado com sucesso.
-[17-03-2025 21:02:09] Cadeira alocada com sucesso.
-[17-03-2025 21:02:10] PC alocado com sucesso.
-[17-03-2025 21:02:10] Headset alocado com sucesso.
-[17-03-2025 21:02:10] Cadeira alocada com sucesso.
-[17-03-2025 21:02:10] PC liberado.
-[17-03-2025 21:02:10] Headset liberado.
-[17-03-2025 21:02:10] Cadeira liberada.
-[17-03-2025 21:02:11] PC liberado.
-[17-03-2025 21:02:11] Headset liberado.
-[17-03-2025 21:02:11] Cadeira liberada.
-[17-03-2025 21:02:11] PC alocado com sucesso.
-[17-03-2025 21:02:11] Headset alocado com sucesso.
-[17-03-2025 21:02:11] Cadeira alocada com sucesso.
-[17-03-2025 21:02:12] PC liberado.
-[17-03-2025 21:02:12] Headset liberado.
-[17-03-2025 21:02:12] Cadeira liberada.
-[17-03-2025 21:02:13] PC alocado com sucesso.
-[17-03-2025 21:02:13] Headset alocado com sucesso.
-[17-03-2025 21:02:13] Cadeira alocada com sucesso.
-[17-03-2025 21:02:14] PC liberado.
-[17-03-2025 21:02:14] Headset liberado.
-[17-03-2025 21:02:14] Cadeira liberada.
-[17-03-2025 21:02:14] PC alocado com sucesso.
-[17-03-2025 21:02:14] Headset alocado com sucesso.
-[17-03-2025 21:02:14] Cadeira alocada com sucesso.
-[17-03-2025 21:02:14] PC liberado.
-[17-03-2025 21:02:14] Headset liberado.
-[17-03-2025 21:02:14] Cadeira liberada.
-[17-03-2025 21:02:15] PC alocado com sucesso.
-[17-03-2025 21:02:15] Headset alocado com sucesso.
-[17-03-2025 21:02:15] Cadeira alocada com sucesso.
-[17-03-2025 21:02:16] PC liberado.
-[17-03-2025 21:02:16] Headset liberado.
-[17-03-2025 21:02:16] Cadeira liberada.
-[17-03-2025 21:02:17] PC alocado com sucesso.
-[17-03-2025 21:02:17] Headset alocado com sucesso.
-[17-03-2025 21:02:17] Cadeira alocada com sucesso.
-[17-03-2025 21:02:17] PC liberado.
-[17-03-2025 21:02:17] Headset liberado.
-[17-03-2025 21:02:17] Cadeira liberada.
-[17-03-2025 21:02:17] PC alocado com sucesso.
-[17-03-2025 21:02:17] Headset alocado com sucesso.
-[17-03-2025 21:02:17] Cadeira alocada com sucesso.
-[17-03-2025 21:02:17] PC liberado.
-[17-03-2025 21:02:17] Headset liberado.
-[17-03-2025 21:02:17] Cadeira liberada.
-[17-03-2025 21:02:21] PC liberado.
-[17-03-2025 21:02:21] Headset liberado.
-[17-03-2025 21:02:21] Cadeira liberada.
-[17-03-2025 21:02:21] PC liberado.
-[17-03-2025 21:02:21] Headset liberado.
-[17-03-2025 21:02:21] Cadeira liberada.
+[2025-03-17 21:06:09] PC alocado com sucesso.
+[2025-03-17 21:06:09] Headset alocado com sucesso.
+[2025-03-17 21:06:09] Cadeira alocada com sucesso.
+[2025-03-17 21:06:10] PC alocado com sucesso.
+[2025-03-17 21:06:10] Headset alocado com sucesso.
+[2025-03-17 21:06:10] Cadeira alocada com sucesso.
+[2025-03-17 21:06:11] PC alocado com sucesso.
+[2025-03-17 21:06:11] Headset alocado com sucesso.
+[2025-03-17 21:06:11] Cadeira alocada com sucesso.
+[2025-03-17 21:06:11] PC alocado com sucesso.
+[2025-03-17 21:06:11] Headset alocado com sucesso.
+[2025-03-17 21:06:11] Cadeira alocada com sucesso.
+[2025-03-17 21:06:13] PC alocado com sucesso.
+[2025-03-17 21:06:13] Headset alocado com sucesso.
+[2025-03-17 21:06:13] Cadeira alocada com sucesso.
+[2025-03-17 21:06:13] PC liberado.
+[2025-03-17 21:06:13] Headset liberado.
+[2025-03-17 21:06:13] Cadeira liberada.
+[2025-03-17 21:06:13] PC liberado.
+[2025-03-17 21:06:13] Headset liberado.
+[2025-03-17 21:06:13] Cadeira liberada.
+[2025-03-17 21:06:14] PC alocado com sucesso.
+[2025-03-17 21:06:14] Headset alocado com sucesso.
+[2025-03-17 21:06:14] Cadeira alocada com sucesso.
+[2025-03-17 21:06:14] PC liberado.
+[2025-03-17 21:06:14] Headset liberado.
+[2025-03-17 21:06:14] Cadeira liberada.
+[2025-03-17 21:06:15] PC liberado.
+[2025-03-17 21:06:15] Headset liberado.
+[2025-03-17 21:06:15] Cadeira liberada.
+[2025-03-17 21:06:15] PC alocado com sucesso.
+[2025-03-17 21:06:15] Headset alocado com sucesso.
+[2025-03-17 21:06:15] Cadeira alocada com sucesso.
+[2025-03-17 21:06:16] PC alocado com sucesso.
+[2025-03-17 21:06:16] Headset alocado com sucesso.
+[2025-03-17 21:06:16] Cadeira alocada com sucesso.
+[2025-03-17 21:06:16] PC liberado.
+[2025-03-17 21:06:16] Headset liberado.
+[2025-03-17 21:06:16] Cadeira liberada.
+[2025-03-17 21:06:17] PC alocado com sucesso.
+[2025-03-17 21:06:17] Headset alocado com sucesso.
+[2025-03-17 21:06:17] Cadeira alocada com sucesso.
+[2025-03-17 21:06:18] PC liberado.
+[2025-03-17 21:06:18] Headset liberado.
+[2025-03-17 21:06:18] Cadeira liberada.
+[2025-03-17 21:06:18] PC liberado.
+[2025-03-17 21:06:18] Headset liberado.
+[2025-03-17 21:06:18] Cadeira liberada.
+[2025-03-17 21:06:18] PC alocado com sucesso.
+[2025-03-17 21:06:18] Headset alocado com sucesso.
+[2025-03-17 21:06:18] Cadeira alocada com sucesso.
+[2025-03-17 21:06:19] PC alocado com sucesso.
+[2025-03-17 21:06:19] Headset alocado com sucesso.
+[2025-03-17 21:06:19] Cadeira alocada com sucesso.
+[2025-03-17 21:06:20] PC liberado.
+[2025-03-17 21:06:20] Headset liberado.
+[2025-03-17 21:06:20] Cadeira liberada.
+[2025-03-17 21:06:20] PC alocado com sucesso.
+[2025-03-17 21:06:20] Headset alocado com sucesso.
+[2025-03-17 21:06:20] Cadeira alocada com sucesso.
+[2025-03-17 21:06:21] PC liberado.
+[2025-03-17 21:06:21] Headset liberado.
+[2025-03-17 21:06:21] Cadeira liberada.
+[2025-03-17 21:06:21] PC liberado.
+[2025-03-17 21:06:21] Headset liberado.
+[2025-03-17 21:06:21] Cadeira liberada.
+[2025-03-17 21:06:21] PC alocado com sucesso.
+[2025-03-17 21:06:21] Headset alocado com sucesso.
+[2025-03-17 21:06:21] Cadeira alocada com sucesso.
+[2025-03-17 21:06:23] PC alocado com sucesso.
+[2025-03-17 21:06:23] Headset alocado com sucesso.
+[2025-03-17 21:06:23] Cadeira alocada com sucesso.
+[2025-03-17 21:06:23] PC liberado.
+[2025-03-17 21:06:23] Headset liberado.
+[2025-03-17 21:06:23] Cadeira liberada.
+[2025-03-17 21:06:24] PC liberado.
+[2025-03-17 21:06:24] Headset liberado.
+[2025-03-17 21:06:24] Cadeira liberada.
+[2025-03-17 21:06:24] PC alocado com sucesso.
+[2025-03-17 21:06:24] Headset alocado com sucesso.
+[2025-03-17 21:06:24] Cadeira alocada com sucesso.
+[2025-03-17 21:06:25] PC alocado com sucesso.
+[2025-03-17 21:06:25] Headset alocado com sucesso.
+[2025-03-17 21:06:25] Cadeira alocada com sucesso.
+[2025-03-17 21:06:25] PC liberado.
+[2025-03-17 21:06:25] Headset liberado.
+[2025-03-17 21:06:25] Cadeira liberada.
+[2025-03-17 21:06:26] PC alocado com sucesso.
+[2025-03-17 21:06:26] Headset alocado com sucesso.
+[2025-03-17 21:06:26] Cadeira alocada com sucesso.
+[2025-03-17 21:06:26] PC liberado.
+[2025-03-17 21:06:26] Headset liberado.
+[2025-03-17 21:06:26] Cadeira liberada.
+[2025-03-17 21:06:26] PC alocado com sucesso.
+[2025-03-17 21:06:26] Headset alocado com sucesso.
+[2025-03-17 21:06:26] Cadeira alocada com sucesso.
+[2025-03-17 21:06:27] PC liberado.
+[2025-03-17 21:06:27] Headset liberado.
+[2025-03-17 21:06:27] Cadeira liberada.
+[2025-03-17 21:06:27] PC liberado.
+[2025-03-17 21:06:27] Headset liberado.
+[2025-03-17 21:06:27] Cadeira liberada.
+[2025-03-17 21:06:27] PC alocado com sucesso.
+[2025-03-17 21:06:27] Headset alocado com sucesso.
+[2025-03-17 21:06:27] Cadeira alocada com sucesso.
+[2025-03-17 21:06:28] PC liberado.
+[2025-03-17 21:06:28] Headset liberado.
+[2025-03-17 21:06:28] Cadeira liberada.
+[2025-03-17 21:06:29] PC alocado com sucesso.
+[2025-03-17 21:06:29] Headset alocado com sucesso.
+[2025-03-17 21:06:29] Cadeira alocada com sucesso.
+[2025-03-17 21:06:29] PC liberado.
+[2025-03-17 21:06:29] Headset liberado.
+[2025-03-17 21:06:29] Cadeira liberada.
+[2025-03-17 21:06:31] PC liberado.
+[2025-03-17 21:06:31] Headset liberado.
+[2025-03-17 21:06:31] Cadeira liberada.
+[2025-03-17 21:06:31] PC liberado.
+[2025-03-17 21:06:31] Headset liberado.
+[2025-03-17 21:06:31] Cadeira liberada.
