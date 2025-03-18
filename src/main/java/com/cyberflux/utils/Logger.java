@@ -24,7 +24,7 @@ public class Logger {
     }
 
     public void log(String mensagem) {
-        String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+        String timestamp = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date());
         String logMessage = "[" + timestamp + "] " + mensagem;
 
         // Exibir no console
