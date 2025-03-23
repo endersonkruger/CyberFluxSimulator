@@ -19,8 +19,8 @@ public class CyberFluxSimulator {
     }
 }
 
-//criar uma solução para evitar deadlock e starvation - algo como limitar o tempo das threads em cada cliente
-//criar um gerenciador de threads para isso (tipo dono da lan house kkk) -> alguma classe que tenha noção e analise a todo tempo os clientes
+//criar uma solução para evitar deadlock e starvation - algo como limitar o tempo das threads em cada recurso
+//criar um gerenciador de threads para isso (tipo dono da lan house kkk) -> alguma classe que tenha noção e analise a todo tempo os clientes e os recursos
 //impedir que só um tipo de cliente acesse os recursos
 //criar um tempo de simulaçao fixo (8h que nem diz no trabalho, pode ser 30s de simulação real)
 //ideias para criar as estatisticas finais:
