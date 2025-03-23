@@ -10,8 +10,17 @@ public class Gamer extends Cliente {
     @Override
     protected boolean solicitarRecursos() {
         try {
-            if (gerenciador.alocarPC() && gerenciador.alocarHeadset()) {
-                gerenciador.alocarCadeira();
+            Cliente prioridade = gerenciador.proximoCliente();
+            if (prioridade != null && prioridade != this) {
+                Thread.sleep((long) (Math.random() * 500)); // Simula re-tentativa
+                return false;
+            }
+    
+            if (gerenciador.alocarPC(this) && gerenciador.alocarHeadset(this)) {
+                if (!gerenciador.alocarCadeira(this)) {
+                    liberarRecursos();
+                    return false;
+                }
                 return true;
             }
         } catch (InterruptedException e) {
@@ -22,8 +31,8 @@ public class Gamer extends Cliente {
 
     @Override
     protected void liberarRecursos() {
-        gerenciador.liberarPC();
-        gerenciador.liberarHeadset();
-        gerenciador.liberarCadeira();
+        gerenciador.liberarPC(this);
+        gerenciador.liberarHeadset(this);
+        gerenciador.liberarCadeira(this);
     }
 }

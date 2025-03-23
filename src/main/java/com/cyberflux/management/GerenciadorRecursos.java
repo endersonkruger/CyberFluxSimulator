@@ -2,8 +2,13 @@ package com.cyberflux.management;
 
 import com.cyberflux.resources.PC;
 import com.cyberflux.resources.Headset;
+
+import java.util.*;
+import java.util.concurrent.*;
+
 import com.cyberflux.resources.Cadeira;
 import com.cyberflux.utils.Logger;
+import com.cyberflux.models.*;
 
 // Gerencia a alocação e liberação de recursos
 public class GerenciadorRecursos {
@@ -12,54 +17,83 @@ public class GerenciadorRecursos {
     private final Cadeira cadeiras;
     private final Logger logger = Logger.getInstancia();
 
+    private final ConcurrentHashMap<Cliente, Integer> falhasClientes;
+    private final Semaphore mutexFila;  // Controle da fila de prioridade
+    private final Queue<Cliente> filaPrioridade;
+
     public GerenciadorRecursos() {
         this.pcs = new PC();
         this.headsets = new Headset();
         this.cadeiras = new Cadeira();
+        this.falhasClientes = new ConcurrentHashMap<>();
+        this.filaPrioridade = new ConcurrentLinkedQueue<>();
+        this.mutexFila = new Semaphore(1); // Mutex para fila
     }
 
-    public boolean alocarPC() throws InterruptedException {
+    private void incrementarFalha(Cliente cliente) throws InterruptedException {
+        mutexFila.acquire();  // Bloqueia acesso à fila
+        falhasClientes.put(cliente, falhasClientes.getOrDefault(cliente, 0) + 1);
+        filaPrioridade.add(cliente);  // Adiciona à fila de prioridade
+        mutexFila.release();  // Libera acesso à fila
+    }
+
+    public boolean alocarPC(Cliente cliente) throws InterruptedException {
         boolean sucesso = pcs.alocar();
         if (sucesso) {
-            logger.log("PC alocado com sucesso.");
+            falhasClientes.put(cliente, 0);
+            logger.log(cliente.getNome() + " alocou um PC.");
         } else {
-            logger.log("Tentativa de alocar PC falhou (sem recursos disponíveis).");
+            incrementarFalha(cliente);
+            logger.log(cliente.getNome() + " tentou alocar PC, mas falhou.");
         }
         return sucesso;
     }
 
-    public void liberarPC() {
-        pcs.liberar();
-        logger.log("PC liberado.");
-    }
-
-    public boolean alocarHeadset() throws InterruptedException {
+    
+    public boolean alocarHeadset(Cliente cliente) throws InterruptedException {
         boolean sucesso = headsets.alocar();
         if (sucesso) {
-            logger.log("Headset alocado com sucesso.");
+            falhasClientes.put(cliente, 0);
+            logger.log(cliente.getNome() + " alocou um Headset.");
         } else {
-            logger.log("Tentativa de alocar Headset falhou (sem recursos disponíveis).");
+            incrementarFalha(cliente);
+            logger.log(cliente.getNome() + " tentou alocar Headset, mas falhou.");
         }
         return sucesso;
     }
-
-    public void liberarHeadset() {
-        headsets.liberar();
-        logger.log("Headset liberado.");
-    }
-
-    public boolean alocarCadeira() throws InterruptedException {
+    
+    
+    public boolean alocarCadeira(Cliente cliente) throws InterruptedException {
         boolean sucesso = cadeiras.alocar();
         if (sucesso) {
-            logger.log("Cadeira alocada com sucesso.");
+            falhasClientes.put(cliente, 0);
+            logger.log(cliente.getNome() + " alocou uma Cadeira.");
         } else {
-            logger.log("Tentativa de alocar Cadeira falhou (sem recursos disponíveis).");
+            incrementarFalha(cliente);
+            logger.log(cliente.getNome() + " tentou alocar Cadeira, mas falhou.");
         }
         return sucesso;
     }
+    
+    public Cliente proximoCliente() throws InterruptedException {
+        mutexFila.acquire();
+        Cliente cliente = filaPrioridade.poll();
+        mutexFila.release();
+        return cliente;
+    }
 
-    public void liberarCadeira() {
+    public void liberarPC(Cliente cliente) {
+        pcs.liberar();
+        logger.log("PC de " + cliente.getNome() + " liberado.");
+    }
+
+    public void liberarCadeira(Cliente cliente) {
         cadeiras.liberar();
-        logger.log("Cadeira liberada.");
+        logger.log("Cadeira de " + cliente.getNome() + " liberada.");
+    }
+
+    public void liberarHeadset(Cliente cliente) {
+        headsets.liberar();
+        logger.log("Headset de " + cliente.getNome() + " liberado.");
     }
 }

@@ -2,13 +2,17 @@ package com.cyberflux.models;
 import java.util.concurrent.ThreadLocalRandom;
 import com.cyberflux.management.GerenciadorRecursos;
 // Classe abstrata para os clientes
-abstract class Cliente extends Thread {
+public abstract class Cliente extends Thread {
     protected String nome;
     protected GerenciadorRecursos gerenciador;
 
     public Cliente(String nome, GerenciadorRecursos gerenciador) {
         this.nome = nome;
         this.gerenciador = gerenciador;
+    }
+
+    public String getNome(){
+        return this.nome;
     }
 
     @Override
