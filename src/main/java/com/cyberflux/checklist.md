@@ -5,7 +5,7 @@
 - [ ]  criar a lógica de estatísticas finais
 - [x]  criar algoritmo que impeça starvation e deadlock (foi usado rollback e fila de prioridades)
 - [ ]  criar ui
-- [ ]  
+- [ ]  implementar clock
 
 
 - [ ]  fazer os slides de apresentação pro Simulador SOsim (visao geral, sobre processos, gerencia de memoria, conclusao)
