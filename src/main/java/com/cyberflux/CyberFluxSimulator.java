@@ -8,10 +8,10 @@ public class CyberFluxSimulator {
     public static void main(String[] args) {
         // Instancia o Gerenciador de Recursos
         GerenciadorRecursos gerenciador = new GerenciadorRecursos();
-        
+
         // Lista de clientes que será criada
         Cliente[] clientes = new Cliente[20];
-        
+
         // Preencher o array de clientes com diferentes tipos
         for (int i = 0; i < 20; i++) {
             if (i % 3 == 0) {
@@ -22,7 +22,7 @@ public class CyberFluxSimulator {
                 clientes[i] = new Estudante("Estudante " + i, gerenciador);  // 1/3 dos clientes são Estudantes
             }
         }
-        
+
         // Inicia todas as threads
         for (Cliente cliente : clientes) {
             cliente.start();
