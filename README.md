@@ -41,9 +41,7 @@ CyberFluxSimulator/
 
 🔹 **Threads e Semáforos** - Para controle concorrente
 
-🔹 **Gradle/Maven** - Gerenciamento de dependências e build
 
-🔹 **JUnit** - Para testes automatizados
 
 ## 📖 Licença
 Este projeto está sob a licença MIT. Sinta-se à vontade para contribuir! 💙
