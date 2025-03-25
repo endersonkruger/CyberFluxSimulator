@@ -32,7 +32,7 @@ CyberFluxSimulator/
 │   │   ├── GerenciadorRecursos.java # Controle de alocação de recursos
 │   │   ├── Logger.java              # Logs do sistema
 │── README.md                        # Este arquivo 😉
-│── CyberFluxSimulator.iml           # Dependências (Gradle/Maven)
+│── CyberFluxSimulator.iml           # Dependências
 ```
 
 
