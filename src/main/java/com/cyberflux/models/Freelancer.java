@@ -1,4 +1,5 @@
 package com.cyberflux.models;
+
 import com.cyberflux.management.GerenciadorRecursos;
 
 // Cliente que prioriza PC + Cadeira
@@ -10,19 +11,22 @@ public class Freelancer extends Cliente {
     @Override
     protected boolean solicitarRecursos() {
         try {
-            Cliente prioridade = gerenciador.proximoCliente();
-            if (prioridade != null && prioridade != this) {
-                Thread.sleep((long) (Math.random() * 500));
-                return false;
-            }
-
-
-            if (gerenciador.alocarPC(this) && gerenciador.alocarCadeira(this)) {
-                if(!gerenciador.alocarHeadset(this)) {
-                    liberarRecursos();
+            while (tempoEmEspera <= tempoMaximoDeEspera) {
+                Cliente prioridade = gerenciador.proximoCliente();
+                if (prioridade != null && prioridade != this) {
+                    long newTime = (long) Math.random() * 500;
+                    Thread.sleep(newTime); // Simula re-tentativa
+                    tempoEmEspera += newTime;
                     return false;
                 }
-                return true;
+
+                if (gerenciador.alocarPC(this) && gerenciador.alocarCadeira(this)) {
+                    if (!gerenciador.alocarHeadset(this)) {
+                        liberarRecursos();
+                        return false;
+                    }
+                    return true;
+                }
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

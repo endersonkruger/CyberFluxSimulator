@@ -1,4 +1,5 @@
 package com.cyberflux.models;
+
 import com.cyberflux.management.GerenciadorRecursos;
 
 // Cliente que precisa apenas de um PC
@@ -10,13 +11,18 @@ public class Estudante extends Cliente {
     @Override
     protected boolean solicitarRecursos() {
         try {
-            Cliente prioridade = gerenciador.proximoCliente();
-            if (prioridade != null && prioridade != this) {
-                Thread.sleep((long) (Math.random() * 500)); // Simula re-tentativa
-                return false;
+            while (tempoEmEspera <= tempoMaximoDeEspera) {
+                Cliente prioridade = gerenciador.proximoCliente();
+                if (prioridade != null && prioridade != this) {
+                    long newTime = (long) Math.random() * 500;
+                    Thread.sleep(newTime); // Simula re-tentativa
+                    tempoEmEspera += newTime;
+                    return false;
+                }
+
+                return gerenciador.alocarPC(this); // Só precisa de um PC
             }
 
-            return gerenciador.alocarPC(this);  // Só precisa de um PC
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
