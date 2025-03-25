@@ -24,59 +24,17 @@
 CyberFluxSimulator/
 │── src/
 │   ├── main/
-│   │   ├── CyberFluxSimulator.java      # Classe principal
-│   │   ├── models/
-│   │   │   ├── Cliente.java             # Classe abstrata para clientes
-│   │   │   ├── Gamer.java               # Cliente Gamer
-│   │   │   ├── Freelancer.java          # Cliente Freelancer
-│   │   │   ├── Estudante.java           # Cliente Estudante
-│   │   ├── resources/
-│   │   │   ├── Recurso.java             # Interface para recursos
-│   │   │   ├── PC.java                  # Classe para PC
-│   │   │   ├── Headset.java             # Classe para Headset VR
-│   │   │   ├── Cadeira.java             # Classe para Cadeira ergonômica
-│   │   ├── management/
-│   │   │   ├── GerenciadorRecursos.java # Controle de alocação de recursos
-│   │   │   ├── Estatisticas.java        # Coleta de estatísticas
-│   │   ├── utils/
-│   │   │   ├── Logger.java              # Logs do sistema
-│   │   │   ├── RandomUtils.java         # Métodos auxiliares
-│── test/
-│   ├── CyberFluxSimulatorTest.java      # Testes unitários
-│── README.md                            # Este arquivo 😉
-│── build.gradle / pom.xml               # Dependências (Gradle/Maven)
+│   │   ├── Cliente.java             # Classe abstrata para clientes
+│   │   ├── CyberFluxSimulator.java  # Classe principal
+│   │   ├── Estudante.java           # Cliente Estudante
+│   │   ├── Freelancer.java          # Cliente Freelancer
+│   │   ├── Gamer.java               # Cliente Gamer
+│   │   ├── GerenciadorRecursos.java # Controle de alocação de recursos
+│   │   ├── Logger.java              # Logs do sistema
+│── README.md                        # Este arquivo 😉
+│── CyberFluxSimulator.iml           # Dependências (Gradle/Maven)
 ```
 
-## 🚀 Como Rodar o Projeto
-### Usando Gradle
-1. Clone o repositório:
-   ```sh
-   git clone https://github.com/seu-usuario/CyberFluxSimulator.git
-   cd CyberFluxSimulator
-   ```
-2. Compile e execute:
-   ```sh
-   ./gradlew run
-   ```
-3. Para rodar os testes:
-   ```sh
-   ./gradlew test
-   ```
-
-### Usando Maven
-1. Clone o repositório:
-   ```sh
-   git clone https://github.com/seu-usuario/CyberFluxSimulator.git
-   cd CyberFluxSimulator
-   ```
-2. Compile e execute:
-   ```sh
-   mvn compile exec:java
-   ```
-3. Para rodar os testes:
-   ```sh
-   mvn test
-   ```
 
 ## 📌 Tecnologias Utilizadas
 🔹 **Java** - Linguagem principal do projeto
