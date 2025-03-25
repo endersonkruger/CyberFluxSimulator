@@ -1,14 +1,15 @@
 package com.cyberflux.management;
 
-import com.cyberflux.resources.PC;
-import com.cyberflux.resources.Headset;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.Semaphore;
 
-import java.util.*;
-import java.util.concurrent.*;
-
+import com.cyberflux.models.Cliente;
 import com.cyberflux.resources.Cadeira;
+import com.cyberflux.resources.Headset;
+import com.cyberflux.resources.PC;
 import com.cyberflux.utils.Logger;
-import com.cyberflux.models.*;
 
 // Gerencia a alocação e liberação de recursos
 public class GerenciadorRecursos {
@@ -18,7 +19,7 @@ public class GerenciadorRecursos {
     private final Logger logger = Logger.getInstancia();
 
     private final ConcurrentHashMap<Cliente, Integer> falhasClientes;
-    private final Semaphore mutexFila;  // Controle da fila de prioridade
+    private final Semaphore mutexFila; // Controle da fila de prioridade
     private final Queue<Cliente> filaPrioridade;
 
     public GerenciadorRecursos() {
@@ -31,10 +32,10 @@ public class GerenciadorRecursos {
     }
 
     private void incrementarFalha(Cliente cliente) throws InterruptedException {
-        mutexFila.acquire();  // Bloqueia acesso à fila
+        mutexFila.acquire(); // Bloqueia acesso à fila
         falhasClientes.put(cliente, falhasClientes.getOrDefault(cliente, 0) + 1);
-        filaPrioridade.add(cliente);  // Adiciona à fila de prioridade
-        mutexFila.release();  // Libera acesso à fila
+        filaPrioridade.add(cliente); // Adiciona à fila de prioridade
+        mutexFila.release(); // Libera acesso à fila
     }
 
     public boolean alocarPC(Cliente cliente) throws InterruptedException {
@@ -49,7 +50,6 @@ public class GerenciadorRecursos {
         return sucesso;
     }
 
-    
     public boolean alocarHeadset(Cliente cliente) throws InterruptedException {
         boolean sucesso = headsets.alocar();
         if (sucesso) {
@@ -61,8 +61,7 @@ public class GerenciadorRecursos {
         }
         return sucesso;
     }
-    
-    
+
     public boolean alocarCadeira(Cliente cliente) throws InterruptedException {
         boolean sucesso = cadeiras.alocar();
         if (sucesso) {
@@ -74,7 +73,7 @@ public class GerenciadorRecursos {
         }
         return sucesso;
     }
-    
+
     public Cliente proximoCliente() throws InterruptedException {
         mutexFila.acquire();
         Cliente cliente = filaPrioridade.poll();
